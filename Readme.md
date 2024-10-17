@@ -29,13 +29,16 @@ The Inventory Management API is a RESTful API that allows users to manage invent
    git clone https://github.com/yourusername/inventory_management.git
    cd inventory_management
 
+   ```
 2. Create a virtual environment and activate it:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 ```
 
 3. Install the required packages:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -47,11 +50,13 @@ pip install -r requirements.txt
 ```bash
 python manage.py migrate
 ```
+
 2. Run the Development Server:
 
 ```bash
 python manage.py runserver
 ```
+
 The API will be accessible at http://localhost:8000.
 
 3. Create a Superuser (optional, for accessing the admin panel):
@@ -63,8 +68,10 @@ python manage.py createsuperuser
 ## API Documentation
 
 For detailed API documentation, please refer to the API Documentation.
+[Api Documentation and Schema](http://127.0.0.1:8000/api/docs/swagger/)
 
 ## Usage Examples
+
 ### Authentication Example
 
 ```bash
@@ -76,6 +83,7 @@ curl -H "Authorization: Bearer your_token" http://localhost:8000/inventory/items
 ```
 
 ### Create Item Example
+
 ```bash
 curl -X POST http://localhost:8000/inventory/items/ \
 -H "Authorization: Bearer your_token" \
